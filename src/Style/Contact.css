@@ -1,0 +1,218 @@
+.contenerdor-contact {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: white;
+    width: 100%;
+    height: 650px;
+}
+
+.card-contact {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: rgb(197, 197, 197);
+    border-radius: 1rem;
+    width: 60%;
+    height: 550px;
+}
+
+.contact-info {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background-color: transparent;
+    border-top-left-radius: 1rem;
+    width: 50%;
+    height: 85%;
+    padding: 2rem;
+}
+
+.titulo-zeus {
+    width: 100%;
+    background-color: transparent;
+}
+
+.description-form {
+    width: 100%;
+    padding: 2rem 0 2rem 0;
+    background-color: transparent;
+}
+
+.localidad,
+.correo-from,
+.telefono-from {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    background-color: transparent;
+    width: 100%;
+    padding: 1% 0 0 0;
+}
+
+.localidad img,
+.correo-from img,
+.telefono-from img {
+    width: 8%;
+}
+
+.localidad p,
+.correo-from p,
+.telefono-from p {
+    width: 80%;
+    margin-left: 10px;
+}
+
+.tex-redes {
+    width: 100%;
+    padding: 2rem 0 0 0;
+    background-color: transparent;
+}
+
+.social-icons {
+    display: flex;
+    width: 100%;
+    background-color: transparent;
+}
+
+.social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #ffba01, #ffda72);
+    margin-right: 0.5rem;
+    transition: 0.3s;
+}
+
+.social-icons img {
+    width: 70%;
+    height: 70%;
+}
+
+.social-icons a:hover {
+    transform: scale(1.05);
+}
+
+.contact-form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    background-color: #ffba01;
+    border-end-end-radius: 1rem;
+    border-top-right-radius: 1rem;
+    width: 50%;
+    height: 100%;
+    padding: 2rem;
+}
+
+.tex-contactanos {
+    width: 100%;
+}
+
+.container-info-from {
+    width: 100%;
+    position: relative;
+    margin: 1rem 0;
+    background-color: transparent;
+}
+.input {
+    width: 100%;
+    outline: none;
+    border: 2px solid white;
+    background: transparent;
+    padding: 0.6rem 6rem;
+    color: white;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+textarea.input {
+    padding: 3rem 1.2rem;
+    min-height: 120px;
+    border-radius: 22px;
+    resize: none;
+    overflow-y: auto;
+}
+
+.container-info-from label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    padding: 0 0.4rem;
+    color: white;
+    pointer-events: none;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+.container-info-from.textarea label {
+    top: 1rem;
+    transform: translateY(0);
+}
+
+.btn {
+    padding: 0.6rem 1.3rem;
+    background-color: white;
+    border: 2px solid white;
+    color: #ffba01;
+    line-height: 1;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+.container-info-from span {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    transform: translateY(-50%);
+    color: transparent;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.container-info-from span:before,
+.container-info-from span:after {
+    content: "";
+    position: absolute;
+    width: 10%;
+    opacity: 0;
+    transition: 0.3s;
+    height: 5px;
+    background-color: #ffba01;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.container-info-from span:before {
+    left: 50%;
+}
+
+.container-info-from span:after {
+    right: 50%;
+}
+
+.container-info-from:focus-within label {
+    top: 0;
+    transform: translateY(-50%);
+    left: 25px;
+    font-size: 0.8rem;
+}
+
+.container-info-from:focus-within span:before,
+.container-info-from:focus-within span:after {
+    width: 50%;
+    opacity: 1;
+}

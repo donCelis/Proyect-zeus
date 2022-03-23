@@ -1,0 +1,124 @@
+.Chapters {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: flex-end;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 20vh;
+  background-color: aliceblue;
+}
+
+.container-chapter {
+  background-color: #29abe2;
+  padding-top: 15vh;
+  height: 100vh;
+  position: relative;
+  display: flex;
+}
+
+.Chapters picture {
+  flex-basis: 40%;
+  padding-left: 2rem;
+}
+
+.Chapters article {
+  flex-basis: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.swiper {
+  width: 500px;
+  height: 500px;
+}
+
+.swiper-slide {
+  background-position: top;
+  background-size: cover;
+}
+
+.img-chapter {
+  display: block;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border: #ffba01 5px solid;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.card-chapter {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.card-chapter p {
+  color: rgb(94, 94, 94);
+  
+}
+
+.card-chapter picture {
+  flex-basis: 100%;
+  height: 400px;
+  background-size: cover;
+}
+
+.link-episiodios {
+  background-color: #ffba01;
+  height: 100px;
+  cursor: pointer;
+  flex-basis: 100%;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  text-align: center;
+  padding-top: 1px;
+  text-decoration: none;
+}
+
+.chapter-text {
+color: black;
+}
+
+.chapter-text:active {
+  color: white;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: black !important;
+}
+
+.link-page {
+  color: #ffba01;
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: 700;
+  margin-left: 8rem;
+  margin-top: 2rem;
+}
+.mySwiper{
+  position: relative;
+}
+.mySwiper::before{
+  content: "";
+    background-image: url(/src/statics/images/rotar.png);
+    right: -2rem;
+    top: -2rem;
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    z-index: 9999;
+    background-size: cover;
+    animation: rotar infinite 2000ms linear;
+}
+
+@keyframes rotar{
+  from{
+    transform: rotateY(0);
+  }
+  to{
+    transform: rotateY(360deg);
+  }
+}

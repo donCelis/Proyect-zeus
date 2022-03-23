@@ -1,0 +1,68 @@
+.home {
+  background-image: url("../statics/images/fondo-principal.png");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 545px;
+  position: relative;
+}
+
+.text-home {
+  text-align: center;
+  width: 400px;
+  height: 400px;
+  background-color: #29abe2;
+  border-radius: 4rem;
+  border-bottom-left-radius: 0;
+  position: absolute;
+  top: 15%;
+  left: 60%;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.33);
+  overflow: hidden;
+}
+
+.text-home img {
+  transform: translatey(150px);
+  transition: 1s;
+}
+
+.title-home {
+  font-size: 42px;
+  color: #ffba01;
+  text-shadow: -1px -1px 7px rgb(19, 18, 18);
+  padding: 0px 10px;
+  transform: translatey(350px);
+  transition: 1s;
+}
+
+.comic-button {
+  font-size: 22px;
+  background-color: #ffba01;
+  border-radius: 20px;
+  border-top-left-radius: 0;
+  padding: 5px 20px;
+  cursor: pointer;
+  transform: translatey(350px);
+  transition: 1.2s;
+}
+
+.comic-button:hover {
+  transform: scale(1.8);
+  box-shadow: 5px 5px 17px 1px #000000;
+}
+
+.subtext-home {
+  margin-top: 1rem;
+  padding: 10px 30px;
+  margin-bottom: 1rem;
+  color: white;
+  transform: translatey(350px);
+  transition: 1s;
+}
+
+.text-home:hover .title-home,
+.text-home:hover .subtext-home,
+.text-home:hover .comic-button,
+.text-home:hover img {
+  transform: translatey(0px);
+}
